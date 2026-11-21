@@ -1,0 +1,38 @@
+{
+  "name": "magpie-agy-quota",
+  "version": "0.1.0",
+  "description": "Magpie quota-only plugin for local Antigravity CLI (agy)",
+  "type": "module",
+  "main": "./index.mjs",
+  "files": [
+    "index.mjs",
+    "agy-usage.mjs",
+    "parse-usage.mjs",
+    "README.md"
+  ],
+  "keywords": [
+    "magpie",
+    "magpie-plugin",
+    "opencode",
+    "opencode-plugin",
+    "antigravity",
+    "agy",
+    "quota"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hjgyuhuk/antigravity-quota-for-magpie.git"
+  },
+  "scripts": {
+    "test": "bun test"
+  },
+  "magpie": {
+    "name": "Antigravity CLI Quota",
+    "summary": {
+      "en": "View local Antigravity CLI (agy) model quotas in Magpie without proxying model requests.",
+      "zh": "在 Magpie 中查看本机 Antigravity CLI (agy) 模型额度，不代理对话请求。"
+    },
+    "maxConcurrency": 1
+  }
+}
